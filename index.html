@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">JOSHTECH</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1 class="animate-fade-in">Hello, I'm <span class="highlight">Olawoore Joshua</span></h1>
+                <p class="animate-fade-in delay-1">A passionate Software Developer | building Innovative Digital solutions</p>
+                <a href="#about" class="btn animate-slide-up delay-2">Learn More About Me</a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="gggg.jpg" alt="Your Profile Picture">
+                    </div>
+                    <div class="about-text">
+                        <p>I am a web developer. I design and build responsive web applications that are both functional and easy to use. With a solid understanding of HTML, CSS, JavaScript, and various frameworks, I focus on crafting user-friendly experiences that simplify interactions and drive engagement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item animate-skill-entry">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                        <p>Proficient in semantic HTML for structuring web content.</p>
+                    </div>
+                    <div class="skill-item animate-skill-entry delay-0-1">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                        <p>Understanding of modern CSS for responsive and engaging designs.</p>
+                    </div>
+                    <div class="skill-item animate-skill-entry delay-0-2">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                        <p>Experienced in interactive web development.</p>
+                    </div>
+                    <div class="skill-item animate-skill-entry delay-0-3">
+                        <i class="fab fa-react"></i>
+                        <h3>React.js</h3>
+                        <p>Building dynamic user interfaces with React</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <h3>Project 1</h3>
+                        <div class="project-media">
+                            <img src="tech.jpg" alt="Project 1 Image" class="project-image-small">
+                        </div>
+                        <p>A dynamic tech community platform designed to help users learn, collaborate, and grow their digital skills.</p>
+                        <a href="https://tech-strive.onrender.com" target="_blank" class="btn view-project-btn">View Website</a>
+                    </div>
+
+                    <div class="project-item">
+                        <h3>Project 2</h3>
+                        <div class="project-media">
+                            <img src="salon.jpg" alt="Project 2 Image 1" class="project-image-small">
+                        </div>
+                        <p>A modern salon website offering online booking, style inspiration, and hair care tips for clients.</p>
+                        <a href="https://joshwxb.github.io/Elegance-Salon/" target="_blank" class="btn view-project-btn">View Website</a>
+                    </div>
+
+                    <div class="project-item">
+                        <h3>Project 3</h3>
+                        <div class="project-media">
+                            <img src="well.jpg" alt="Project 3 Image" class="project-image-small">
+                        </div>
+                        <p>A community wellness website promoting health initiatives, resources, and local services for the people of Iworoko.</p>
+                        <a href="https://joshwxb.github.io/Wellness-Hub-Iworoko/" target="_blank" class="btn view-project-btn">View Website</a>
+                    </div>
+
+                    <div class="project-item">
+                        <h3>Project 4</h3>
+                        <div class="project-media">
+                            <img src="lexi.jpg"Project 4 Image" class="project-image-small">
+                        </div>
+                        <p>A comprehensive English dictionary website for students, educators, and language enthusiasts.</p>
+                        <a href=" https://joshwxb.github.io/Laxidictionary/" target="_blank" class="btn view-project-btn">View Website</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <p class="contact-intro">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                <div class="contact-form-container">
+                    <form action="https://formspree.io/f/xldgnlpz" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <div class="form-button-wrapper">
+                            <button type="submit" class="btn submit-btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.tiktok.com/@josh079364?_t=ZM-8xalsyRNIU1&_r=1" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/joshofficialx?igsh=Ym10cnFyeWVwNGRv" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/kenny.joe.857330" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/olawoore134?t=dtsHGMhODAPgU4ftHDFExQ&s=09" target="_blank" aria-label="Twitter X"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Olawoore Joshua. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

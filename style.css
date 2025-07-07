@@ -1,0 +1,650 @@
+/* General Body and Typography */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #007bff; /* Blue */
+    --secondary-color: #6c757d; /* Gray */
+    --accent-color: #007bff; /* Green */
+    --text-color: #333;
+    --background-color: #f8f9fa;
+    --light-gray: #e9ecef;
+    --dark-blue: #0056b3;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: var(--dark-blue);
+    transform: translateY(-2px);
+}
+
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section:nth-of-type(even) {
+    background-color: var(--light-gray);
+}
+
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.logo a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    font-weight: 600;
+    padding: 5px 0;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+/* Hamburger Menu Icon */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    z-index: 1001;
+}
+
+.hamburger .bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--text-color);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hero Section (Home) */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('b.jpg') no-repeat center center/cover;
+    color: white;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.hero-content .highlight {
+    color: var(--accent-color);
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 250px;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.02);
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.skill-item {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    /* Initial state for skill animation - will be controlled by JS */
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.skill-item i {
+    font-size: 3em;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.skill-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--dark-blue);
+}
+
+.skill-item p {
+    font-size: 0.95em;
+    color: #666;
+}
+
+/* My Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.project-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* --- IMPORTANT CHANGE HERE --- */
+    /* Removed initial opacity and transform so projects are visible on page load */
+    /* If you want them to animate in on scroll, JavaScript will add the opacity/transform */
+    /* But they will be visible by default before the JS loads or before scrolling */
+    /* opacity: 0; */
+    /* transform: translateY(20px); */
+}
+
+.project-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--dark-blue);
+}
+
+.project-media {
+    margin-bottom: 25px;
+    position: relative; /* Needed for z-index and potential positioning */
+    overflow: hidden; /* Helps contain the zoomed media */
+}
+
+.project-media video,
+.project-media img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 10px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    cursor: pointer; /* Indicate clickability */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for zoom */
+    /* object-fit: cover; /* Optional: if you want images to fill the space without distortion */
+}
+
+/* Style for the Project 2 image (or any image with this class) */
+.project-image-small {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.project-media img + img {
+    margin-top: 15px;
+}
+
+/* --- NEW CSS FOR PROJECT MEDIA ZOOM --- */
+.project-media.zoomed video,
+.project-media.zoomed img {
+    transform: scale(1.2); /* Zoom in effect */
+    z-index: 10; /* Bring to front */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+
+.project-item p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+/* MODIFIED: Even Bigger and Centered View Project button */
+.project-item a.btn.view-project-btn {
+    font-size: 0.95em;
+    padding: 10px 22px;
+    max-width: 180px;
+    width: auto;
+    box-sizing: border-box;
+    white-space: nowrap;
+    display: block;
+    margin: 20px auto 0 auto;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+.project-item a.btn.view-project-btn:hover {
+    background-color: var(--dark-blue);
+    transform: translateY(-1px);
+}
+
+
+/* Contact Section */
+.contact-intro {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.contact-form-container {
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Centering the Send Message Button */
+.form-button-wrapper {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.submit-btn {
+    width: auto;
+    padding: 12px 30px;
+    font-size: 1.1em;
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links a {
+    display: inline-block;
+    font-size: 1.8em;
+    margin: 0 15px;
+    color: var(--secondary-color);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.9em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0; /* Ensure initial state for animation */
+}
+
+.animate-fade-in.delay-1 {
+    animation-delay: 0.5s;
+}
+
+.animate-fade-in.delay-2 {
+    animation-delay: 1s;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+    opacity: 0; /* Ensure initial state for animation */
+    transform: translateY(20px); /* Ensure initial state for animation */
+}
+
+.animate-slide-up.delay-2 {
+    animation-delay: 1.2s;
+}
+
+/* Skill item entry animation (triggered by JS) */
+.animate-skill-entry {
+    animation: slideUp 0.6s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.animate-skill-entry.delay-0-1 { animation-delay: 0.1s; }
+.animate-skill-entry.delay-0-2 { animation-delay: 0.2s; }
+.animate-skill-entry.delay-0-3 { animation-delay: 0.3s; }
+.animate-skill-entry.delay-0-4 { animation-delay: 0.4s; }
+.animate-skill-entry.delay-0-5 { animation-delay: 0.5s; }
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        flex-direction: column;
+        padding: 20px 0;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        padding: 10px 20px;
+        display: block;
+        text-align: center;
+    }
+
+    /* Hamburger animation when active */
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-bottom: 20px;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2em;
+    }
+
+    /* MODIFIED: Even Bigger and Centered View Project button on mobile */
+    .project-item a.btn.view-project-btn {
+        font-size: 0.95em;
+        padding: 10px 20px;
+        max-width: 160px;
+        display: block;
+        margin: 15px auto 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .social-links a {
+        font-size: 1.5em;
+        margin: 0 10px;
+    }
+
+    .contact-form-container {
+        padding: 25px;
+    }
+}
+
+/* Keyframes for a subtle click effect */
+@keyframes projectClickEffect {
+    0% { transform: scale(1) translateY(0); }
+    50% { transform: scale(0.99) translateY(1px); }
+    100% { transform: scale(1) translateY(0); }
+}
+
+/* Class to apply the animation on click */
+.project-item.clicked {
+    animation: projectClickEffect 0.2s ease-out forwards;
+}
