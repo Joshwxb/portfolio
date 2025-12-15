@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="logo.png" alt="Your Logo"> 
+        </a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+
+        <div id="menu-icon" class="fas fa-bars"></div>
+    </header>
+
+    <div id="mobile-menu" class="mobile-menu-overlay">
+        <a href="javascript:void(0)" class="closebtn">&times;</a>
+        <div class="mobile-menu-content">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </div>
+
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <div class="text-content" data-aos="fade-right">
+                <p class="greeting">I'm Joshua</p>
+                <h1>Software Engineer </h1>
+                <p>I am a software engineer. I build responsive, user-friendly web applications using modern frontend and backend tools.</p>
+                <div class="btn-group">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="JOSH.pdf" download class="btn secondary-btn">Download Resume</a>
+                </div>
+            </div>
+            <div class="image-content" data-aos="fade-left">
+                <img src="1.jpg" alt="Profile Image of Akorede">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="heading" data-aos="fade-up">About Me</h2>
+        <div class="about-container">
+            
+            <div class="about-intro">
+                <div class="intro-image" data-aos="fade-right">
+                    <img src="2.jpg" alt="Akorede in a professional setting">
+                </div>
+                <div class="intro-text" data-aos="fade-left">
+                    <h3>Hello, I'm Joshua Olawoore</h3>
+                    <p>
+                        Software Engineer (Full Stack Developer) with over 3+ years of experience in developing 
+innovative technology solutions and solving digital problems. I'm passionate about building 
+scalable and efficient solutions that make a real impact. My expertise include frontend and 
+backend development,specializing in developing user interfaces and responsiveness. Am open to 
+remote jobs.
+                    </p>
+                    <p>
+                        Beyond coding, I am passionate about mentorship and contributing to the tech community,Let's build something impactful together!.
+                    </p>
+                </div>
+            </div>
+            <div class="about-row">
+                <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Bachelor of Science in Computer Science,Ekiti State University</h3>
+                    <p>Specialized on core computer science principles, including advanced algorithms, software design patterns, operating systems, and network security. Actively participated in various coding competitions and academic projects.</p>
+                </div>
+                <div class="box" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Advanced Certifications</h3>
+                    <p>Completed professional certifications in Frontend Development at Kinplus Technology and Full-Stack Development at PLP Academy.</p>
+                </div>
+                <div class="box" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fas fa-download"></i>
+                    <h3>Download My CV</h3>
+                    <p>Get a detailed overview of my experience, projects, and skills in PDF format.</p>
+                    <a href="JOSH.pdf" download class="btn small-btn">Download Now</a>
+                </div>
+            </div>
+
+            <h3 class="sub-heading" data-aos="fade-up">Key Achievements</h3>
+            <div class="about-row achievements">
+                <div class="box" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-rocket"></i>
+                    <h4>WeBlog Founder</h4>
+                    <p>Educational platform delivering valuable content, resources, and knowledge to help you grow.</p>
+                </div>
+                <div class="box" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fas fa-users"></i>
+                    <h4>GDG Ekiti Member</h4>
+                    <p>Active participation in community events and tech meetups.</p>
+                </div>
+                <div class="box" data-aos="fade-up" data-aos-delay="600">
+                    <i class="fas fa-laptop-code"></i>
+                    <h4>Student Ambassador</h4>
+                    <p>Cowrywise and Tedx Ambassador</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <section class="skills" id="skills">
+        <h2 class="heading" data-aos="fade-up">My Skills</h2>
+        <div class="skills-container">
+
+            <div class="skill-card" data-aos="flip-up" data-aos-delay="100">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 99%;"><span>99%</span></div>
+                </div>
+                <p class="skill-description">Semantic structure and modern web standards.</p>
+            </div>
+
+            <div class="skill-card" data-aos="flip-up" data-aos-delay="200">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3 / SCSS</h3>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 99%;"><span>99%</span></div>
+                </div>
+                <p class="skill-description">Responsive design, Flexbox, Grid, and preprocessors.</p>
+            </div>
+
+            <div class="skill-card" data-aos="flip-up" data-aos-delay="300">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 85%;"><span>85%</span></div>
+                </div>
+                <p class="skill-description">DOM manipulation, asynchronous programming, and ES6+.</p>
+            </div>
+
+            <div class="skill-card" data-aos="flip-up" data-aos-delay="400">
+                <i class="fab fa-react"></i>
+                <h3>React.js</h3>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 90%;"><span>90%</span></div>
+                </div>
+                <p class="skill-description">Component-based architecture, Hooks, and state management.</p>
+            </div>
+
+            <div class="skill-card" data-aos="flip-up" data-aos-delay="500">
+                <i class="fas fa-server"></i>
+                <h3>Express.js</h3>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 75%;"><span>80%</span></div>
+                </div>
+                <p class="skill-description">Building robust and scalable RESTful APIs.</p>
+            </div>
+
+            <div class="skill-card" data-aos="flip-up" data-aos-delay="600">
+                <i class="fab fa-node-js"></i>
+                <h3>Node.js</h3>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 85%;"><span>85%</span></div>
+                </div>
+                <p class="skill-description">Server-side development and package management.</p>
+            </div>
+
+            <div class="skill-card" data-aos="flip-up" data-aos-delay="700">
+                <i class="fas fa-database"></i>
+                <h3>MongoDB</h3>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 90%;"><span>90%</span></div>
+                </div>
+                <p class="skill-description">NoSQL database management and indexing.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h3 class="heading" data-aos="fade-up">My Recent Work</h3>
+        <div class="projects-container">
+            
+            <div class="project-card" data-aos="zoom-in"> <div class="project-image-wrapper">
+                    <a href="https://example.com/techhub-live" target="_blank" class="image-link-area"> 
+                        <img src="ybbb.JPG" alt="weblog"> 
+                        <div class="project-overlay">
+                            <i class="fas fa-link"></i>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="project-content">
+                    <h3>WEBLOG</h3>
+                    <p class="project-description">A platform for sharing valuable resources and well-detailed content to improve your skills and knowledge.</p>
+                    <div class="project-tech-badges">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Tailwind</span>
+                        <span class="tech-badge">Cloudinary Integration</span>
+                        <span class="tech-badge">API Integration & database</span>
+                    </div>
+                    <div class="project-buttons">
+<a href="https://example.com/techhub-live" target="_blank" class="live-link-text">
+    View Project →
+</a>                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="100"> 
+                <div class="project-image-wrapper">
+                    <a href="https://tech-strive.onrender.com/" target="_blank" class="image-link-area">
+                        <img src="rttt.JPG" alt="Tech-strive"> 
+                        <div class="project-overlay">
+                            <i class="fas fa-link"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-content">
+                    <h3>TECH-STRIVE</h3>
+                    <p class="project-description">A Tech Community platform designed to help users learn, collaborate, and grow their digital skills.</p>
+                    <div class="project-tech-badges">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Dashboard</span>
+                        <span class="tech-badge">Analytics</span>
+                    </div>
+                    <div class="project-buttons">
+<a href="https://tech-strive.onrender.com" target="_blank" class="live-link-text">
+    View Project →
+</a>                     </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="project-image-wrapper">
+                    <a href="https://joshwxb.github.io/Wellness-Hub-Iworoko" target="_blank" class="image-link-area">
+                        <img src="wkkkkk.JPG" alt="wellness"> 
+                        <div class="project-overlay">
+                            <i class="fas fa-link"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-content">
+                    <h3>WELLNESS HUB</h3>
+                    <p class="project-description">A wellness website promoting health initiatives, resources, and local services for the people.</p>
+                    <div class="project-tech-badges">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Tailwind</span>
+                        <span class="tech-badge">Security</span>
+                    </div>
+                    <div class="project-buttons">
+<a href="https://joshwxb.github.io/Wellness-Hub-Iworoko" target="_blank" class="live-link-text">
+    View Project →
+</a>                     </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="heading" data-aos="fade-up">Contact Us</h2>
+        <div class="contact-container">
+            
+            <div class="contact-info" data-aos="fade-right">
+                <h3>Let's Connect!</h3>
+                <p>I am currently open to new opportunities and collaborations. Feel free to reach out to discuss your project.</p>
+                <div class="contact-details">
+                    <p><i class="fas fa-envelope"></i> olawoore589@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +234 070 38943310</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Ekiti, Nigeria</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://x.com/olawoore134?t=lo2SOGiNxzhcK0PlWT_4_A&s=09" target="_blank" data-aos="zoom-in" data-aos-delay="300"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.tiktok.com/@joshtech72?_r=1&_t=ZS-92A30klacK8" target="_blank" data-aos="zoom-in" data-aos-delay="400"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/joshofficialx?igsh=Ym10cnFyeWVwNGRv" target="_blank" data-aos="zoom-in" data-aos-delay="300"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <form class="contact-form" data-aos="fade-left" action="https://formspree.io/f/xldgnlpz" method="POST">
+    <div class="input-box">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+    </div>
+    <input type="text" name="subject" placeholder="Subject" required>
+    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn primary-btn">Send Message</button>
+</form>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Joshua Olawoore All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true, 
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
