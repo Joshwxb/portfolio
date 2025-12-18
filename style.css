@@ -449,20 +449,25 @@ section {
 }
 
 .projects-container {
-    /* REDUCTION 1: Reduced minmax from 320px to 280px, and gap from 30px to 20px */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-    gap: 20px; 
+    /* This tells the grid: "Make the boxes at least 350px wide". 
+       If there isn't enough room for all on one line, move them to the next row. */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    gap: 30px; 
+    padding: 20px 0;
+    justify-content: center; /* This centers the 2 projects on the bottom row */
 }
 
 .project-card {
     background: var(--background-color);
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
     display: flex; 
     flex-direction: column;
+    height: 100%; /* Keeps all boxes the same height */
+    width: 100%;  /* Ensures they fill the grid space up to the max width */
 }
 
 .project-card:hover {
